@@ -1,0 +1,92 @@
+.main {
+    height: 44%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main .thecard {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.main .thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.main .thecard .front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.main .thecard .front .top {
+    height: 15%;
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-weight: 600;
+    color: #BFA181;
+    letter-spacing: 0.1cap;
+    
+}
+
+.main .thecard .front .bottom {
+    margin: 5% 5% 5% 5%;
+    height: 100%;
+    width: 100%;
+   
+}
+
+.main .thecard .front .bottom img {
+    height: 75%;
+    width: 90%;
+    border-radius: 10px;
+    object-fit: contain;
+    
+}
+
+.main .thecard .back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: rgba(0, 0, 0, 0.455);
+}
+
+.main .thecard .back .title {
+    height: 15%;
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-weight: 600;
+    color: #BFA181;
+    letter-spacing: 0.1cap;
+    
+    
+}
+
+.main .thecard .back .desc {
+    margin: 5% 5%;
+    font-size: 0.8rem;
+    color: #fff7ce;
+    text-align: justify;
+    
+}
+.btn {
+    height: 13%;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.532);
+    color:#fff7ce;
+    padding: 1px;
+    box-shadow: 2px 2px 5px black;
+}
