@@ -11,7 +11,7 @@ function Projects() {
       projectdesc:
         "A portfolio developed using React and CSS is a modern and customizable showcase of an individual's  projects, skills, and achievements.",
       link: true,
-      projectlink: ""
+      projectlink: "https://20p3qa0567aman.github.io/Portfolio/"
     },
     {
       cardTitle: "TextUtils",
