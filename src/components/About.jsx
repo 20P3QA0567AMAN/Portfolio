@@ -1,49 +1,55 @@
 import React from "react";
-import project from "./stylesheet/project.module.css";
-import Card from "./Card";
-import {Link} from 'react-router-dom'
+import aboutcss from "./stylesheet/about.module.css";
+import photo from "../images/IMG_20231007_094400_001.jpg";
+import { CgProfile } from "react-icons/cg";
+import { IoCallOutline } from "react-icons/io5";
+import { AiOutlineMail } from "react-icons/ai";
+import { ImLinkedin } from "react-icons/im";
+import { FaSquareGithub } from "react-icons/fa6";
 
-function Projects() {
-  const data = [
-    {
-      cardTitle: "Portfolio",
-      projectImg: "./portfolio.png",
-      projectdesc:
-        "A portfolio developed using React and CSS is a modern and customizable showcase of an individual's  projects, skills, and achievements.",
-      link: true,
-      projectlink: "https://aman0567.github.io/Portfolio/"
-    },
-    {
-      cardTitle: "TextUtils",
-      projectImg: "./Screenshot 2024-04-08 154237.png",
-      projectdesc:
-        "The website is a simple yet powerful tool for converting text between uppercase and lowercase formats with ease.",
-      link: true,
-      projectlink:"https://aman0567.github.io/TextUtils/"
-    },
-    {
-      cardTitle: "NewsAPP",
-      projectImg: "./newsapp.png",
-      projectdesc:
-        "The website is a comprehensive and dynamic platform that aggregates news content from various sources worldwide. ",
-      link: false,
-      projectlink: ""
-    },
-    
-   
-  ];
+function About() {
   return (
-    <div className={project.main}>
-      <div className={project.nav}>
-      <Link to="/">Home</Link><Link to="/skills">Skills</Link><Link to="/projects">Projects</Link>
+    <div className={aboutcss.aboutmain}>
+      <div className={aboutcss.top}>
+        <div className={aboutcss.image}>
+          <img src={photo} />
+        </div>
       </div>
-      <div className={project.box}>
-        {data.map((items, index) => (
-          <Card key={index} data={items} />
-        ))}
+      <div className={aboutcss.bottom}>
+        <div className={aboutcss.info}>
+          <CgProfile style={{ height: "100%", fontSize: "2rem" }} />{" "}
+          <p className={aboutcss.name}>Aman Kumar</p>
+        </div>
+        <div className={aboutcss.info}>
+          <IoCallOutline style={{ height: "100%", fontSize: "2rem" }} />{" "}
+          <p className={aboutcss.number}> +91 6203720154 </p>{" "}
+        </div>
+        <div className={aboutcss.info}>
+          <AiOutlineMail style={{ height: "100%", fontSize: "2rem" }} />{" "}
+          <p className={aboutcss.email}> amankumar08888@gmail.com</p>
+        </div>
+        <div className={aboutcss.info}>
+          <ImLinkedin style={{ height: "100%", fontSize: "2rem" }} />{" "}
+          <a
+            className={aboutcss.linkedin}
+            href="https://www.linkedin.com/in/aman-kumar-287b70217/"
+          >
+            Linkedin profile
+          </a>
+        </div>
+        <div className={aboutcss.info}>
+          <FaSquareGithub style={{ height: "100%", fontSize: "2rem" }} />
+          <a
+            className={aboutcss.github}
+            href="https://github.com/Aman0567"
+          >
+            Github
+          </a>
+        </div>
+      
       </div>
     </div>
   );
 }
 
-export default Projects;
+export default About;
