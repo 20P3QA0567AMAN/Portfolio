@@ -41,7 +41,7 @@ function About() {
           <FaSquareGithub style={{ height: "100%", fontSize: "2rem" }} />
           <a
             className={aboutcss.github}
-            href="https://github.com/20P3QA0567AMAN"
+            href="https://github.com/Aman0567"
           >
             Github
           </a>

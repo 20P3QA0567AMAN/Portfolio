@@ -11,7 +11,7 @@ function Projects() {
       projectdesc:
         "A portfolio developed using React and CSS is a modern and customizable showcase of an individual's  projects, skills, and achievements.",
       link: true,
-      projectlink: "https://20p3qa0567aman.github.io/Portfolio/"
+      projectlink: "https://aman0567.github.io/Portfolio/"
     },
     {
       cardTitle: "TextUtils",
@@ -19,7 +19,7 @@ function Projects() {
       projectdesc:
         "The website is a simple yet powerful tool for converting text between uppercase and lowercase formats with ease.",
       link: true,
-      projectlink:"https://20p3qa0567aman.github.io/TextUtils/"
+      projectlink:"https://aman0567.github.io/TextUtils/"
     },
     {
       cardTitle: "NewsAPP",
